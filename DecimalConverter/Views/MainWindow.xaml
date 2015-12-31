@@ -81,7 +81,7 @@
                      MaxLength="16"
                      Text="{Binding HexaDecimalNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBox Grid.Column="1" Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5,5,5,5"
-                     MaxLength="22"
+                     MaxLength="21"
                      Text="{Binding OctDecimalNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                      
             <!--ビットとバイト表示用-->
