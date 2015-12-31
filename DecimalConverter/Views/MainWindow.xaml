@@ -71,13 +71,13 @@
             <TextBlock Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Text="16進数" />
 
             <TextBox Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5,5,5,5"
-                 Text="{Binding DecimalNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                     Text="{Binding DecimalNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBox Grid.Column="1" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5,5,5,5"
-                 MaxLength="64"
-                 Text="{Binding BinaryNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                     MaxLength="64"
+                     Text="{Binding BinaryNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBox Grid.Column="1" Grid.Row="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5,5,5,5"
-                 MaxLength="16"
-                 Text="{Binding HexadecimalNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                     MaxLength="16"
+                     Text="{Binding HexadecimalNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
             <!--ビットとバイト表示用-->
             <Grid Grid.Column="1" Grid.Row="5" Margin="5,0,0,0">
@@ -94,13 +94,13 @@
                     </Style>
                 </Grid.Resources>
                 <TextBlock Grid.Column="0" Width="30" HorizontalAlignment="Right"
-                       Text="{Binding CurrentBit, UpdateSourceTrigger=PropertyChanged}"/>
+                           Text="{Binding CurrentBit, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Grid.Column="1" Width="30" HorizontalAlignment="Left"
-                       Text="bit"/>
+                           Text="bit"/>
                 <TextBlock Grid.Column="2" Width="30" HorizontalAlignment="Right" 
-                       Text="{Binding CurrentByte, UpdateSourceTrigger=PropertyChanged}" />
+                           Text="{Binding CurrentByte, UpdateSourceTrigger=PropertyChanged}" />
                 <TextBlock Grid.Column="4"  Width="30" HorizontalAlignment="Left"
-                       Text="byte"/>
+                           Text="byte"/>
             </Grid>
         </Grid>
     </Border>
