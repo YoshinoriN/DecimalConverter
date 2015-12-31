@@ -1,4 +1,7 @@
-# DecimalConverter
+# DecimalConverter 
+
+[![Build Status](https://travis-ci.org/YoshinoriN/DecimalConverter.svg?branch=master)](https://travis-ci.org/YoshinoriN/DecimalConverter)
+
 Converter for decimal(Decimal, Binary Number, Hexa Decimal, Octal Decimal).
 
 * Decimal (10進数) ←→ Binary Number (2進数)
