@@ -37,7 +37,7 @@ namespace DecimalConverter.ViewModels
                     value = "0";
                 }
 
-                if (value.Length > 64 | System.Text.RegularExpressions.Regex.IsMatch(value, "[^0-1]+"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(value, "[^0-1]+"))
                 {
                     return;
                 }
@@ -67,7 +67,7 @@ namespace DecimalConverter.ViewModels
                     value = "0";
                 }
 
-                if (value.Length > 16 | System.Text.RegularExpressions.Regex.IsMatch(value, "[^a-fA-F0-9]+"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(value, "[^a-fA-F0-9]+"))
                 {
                     return;
                 }
