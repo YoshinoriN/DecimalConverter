@@ -10,7 +10,7 @@
         Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None"
-        WindowState="Minimized"
+        ResizeMode="CanMinimize"
         >
 
     <WindowChrome.WindowChrome>
