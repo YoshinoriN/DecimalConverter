@@ -1,2 +1,4 @@
 language: csharp
 solution: DecimalConverter.sln
+script:
+  - xbuild /p:Configuration=Release DecimalConverter.sln
