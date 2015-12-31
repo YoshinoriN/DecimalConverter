@@ -24,7 +24,7 @@ namespace DecimalConverter.Views
         }
 
         /// <summary>
-        /// 最大化
+        /// 画面閉じる
         /// </summary>
         private void close_Btn_Click(object sender, RoutedEventArgs e)
         {
