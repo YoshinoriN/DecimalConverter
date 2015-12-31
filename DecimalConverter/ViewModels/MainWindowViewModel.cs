@@ -19,7 +19,7 @@ namespace DecimalConverter.ViewModels
                 {
                     this._decimalNumber = value;
                     this.BinaryNumber = Convert.ToString(value, 2);
-                    this.HexadecimalNumber = Convert.ToString(value, 16);
+                    this.HexaDecimalNumber = Convert.ToString(value, 16);
                     this.OctDecimalNumber = Convert.ToString(value, 8);
                 }
                 this.OnPropertyChanged();
@@ -49,7 +49,7 @@ namespace DecimalConverter.ViewModels
                 {
                     this._binaryNumber = value;
                     this.DecimalNumber = Convert.ToInt64(value, 2);
-                    this.HexadecimalNumber = Convert.ToString(this.DecimalNumber, 16);
+                    this.HexaDecimalNumber = Convert.ToString(this.DecimalNumber, 16);
                     this.OctDecimalNumber = Convert.ToString(this.DecimalNumber, 8);
                     this.CurrentBit = value.Length;
                 }
@@ -57,13 +57,13 @@ namespace DecimalConverter.ViewModels
             }
         }
 
-        private string _hexadecimalNumber = "0";
+        private string _hexaDecimalNumber = "0";
         /// <summary>
         /// 16進数(テキストボックスとバインディング)
         /// </summary>
-        public string HexadecimalNumber
+        public string HexaDecimalNumber
         {
-            get { return this._hexadecimalNumber; }
+            get { return this._hexaDecimalNumber; }
             set
             {
                 if(value.Length == 0)
@@ -76,9 +76,9 @@ namespace DecimalConverter.ViewModels
                     return;
                 }
 
-                if (value != _hexadecimalNumber)
+                if (value != _hexaDecimalNumber)
                 {
-                    this._hexadecimalNumber = value.ToUpper();
+                    this._hexaDecimalNumber = value.ToUpper();
                     this.DecimalNumber = Convert.ToInt64(value, 16);
                     this.BinaryNumber = Convert.ToString(this.DecimalNumber, 2);
                     this.OctDecimalNumber = Convert.ToString(this.DecimalNumber, 8);
@@ -111,7 +111,7 @@ namespace DecimalConverter.ViewModels
                     this._octDecimalNumber = value;
                     this.DecimalNumber = Convert.ToInt64(value, 8);
                     this.BinaryNumber = Convert.ToString(this.DecimalNumber, 2);
-                    this.HexadecimalNumber = Convert.ToString(this.DecimalNumber, 16);
+                    this.HexaDecimalNumber = Convert.ToString(this.DecimalNumber, 16);
                 }
                 this.OnPropertyChanged();
             }
