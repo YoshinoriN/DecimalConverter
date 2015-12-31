@@ -1,4 +1,7 @@
 # DecimalConverter
+
+[![Build status (master)](https://ci.appveyor.com/api/projects/status/tbfok5u93tb2pdlv/branch/master?svg=true)](https://ci.appveyor.com/project/YoshinoriN/decimalconverter)
+
 Converter for decimal(Decimal, Binary Number, Hexa Decimal, Octal Decimal).
 
 * Decimal (10進数) ←→ Binary Number (2進数)
