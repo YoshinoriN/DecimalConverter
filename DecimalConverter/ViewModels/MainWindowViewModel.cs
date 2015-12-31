@@ -4,6 +4,8 @@ namespace DecimalConverter.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
+        #region"進数のテキストボックス"
+
         private Int64 _decimalNumber = 0;
         /// <summary>
         /// 10進数(テキストボックスとバインディング)
@@ -38,7 +40,7 @@ namespace DecimalConverter.ViewModels
                     value = "0";
                 }
 
-                if (value.Length > 64 | System.Text.RegularExpressions.Regex.IsMatch(value, "[^0-1]+"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(value, "[^0-1]+"))
                 {
                     return;
                 }
@@ -69,7 +71,7 @@ namespace DecimalConverter.ViewModels
                     value = "0";
                 }
 
-                if (value.Length > 16 | System.Text.RegularExpressions.Regex.IsMatch(value, "[^a-fA-F0-9]+"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(value, "[^a-fA-F0-9]+"))
                 {
                     return;
                 }
@@ -115,6 +117,10 @@ namespace DecimalConverter.ViewModels
             }
         }
 
+        #endregion
+
+        #region "ビットとバイト表示"
+
         private int _currentBit = 1;
         /// <summary>
         /// 現在のビット
@@ -144,11 +150,18 @@ namespace DecimalConverter.ViewModels
             }
         }
 
-        //ファイル名とバージョン表示
-        public string Title { get; private set; } = System.IO.Path.GetFileNameWithoutExtension(@System.Reflection.Assembly.GetExecutingAssembly().Location) + " " +
+        #endregion
+
+        /// <summary>
+        /// アプリ名とバージョン
+        /// </summary>
+        public string Title { get; private set; } = 
+            System.IO.Path.GetFileNameWithoutExtension(@System.Reflection.Assembly.GetExecutingAssembly().Location) + " " +
             System.Diagnostics.FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).ProductVersion.ToString();
 
-
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public MainWindowViewModel()
         {
 
