@@ -20,6 +20,7 @@ namespace UnitTest
             Assert.AreEqual("0", vm.BinaryNumber, "2進数:0");
             Assert.AreEqual("0", vm.OctDecimalNumber, "8進数:0");
             Assert.AreEqual("0", vm.HexaDecimalNumber, "16進数:0");
+            Assert.AreEqual("1", vm.HexaDecimalNumber, "わざと落とす");
         }
     }
 }
