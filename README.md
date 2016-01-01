@@ -1,4 +1,10 @@
 # DecimalConverter
+
+[![Build status (master)](https://ci.appveyor.com/api/projects/status/tbfok5u93tb2pdlv/branch/master?svg=true)](https://ci.appveyor.com/project/YoshinoriN/decimalconverter)
+[![Release](https://img.shields.io/github/release/YoshinoriN/DecimalConverter.svg?style=flat-square)](https://github.com/YoshinoriN/DecimalConverter/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/YoshinoriN/DecimalConverter/total.svg?)](https://github.com/YoshinoriN/DecimalConverter/releases/latest)
+
+
 Converter for decimal(Decimal, Binary Number, Hexa Decimal, Octal Decimal).
 
 * Decimal (10進数) ←→ Binary Number (2進数)
