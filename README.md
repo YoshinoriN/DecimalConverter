@@ -14,15 +14,19 @@ Converter for decimal(Decimal, Binary Number, Hexa Decimal, Octal Decimal).
 * Binary Number (2進数) ←→ Octal Decimal (8進数)
 * Octal Decimal (8進数) ←→ Hexa Decimal (16進数)
 
-# System Requirements
+### Download
+
+* Please download from [release page](https://github.com/YoshinoriN/DecimalConverter/releases). 
+
+### System Requirements
 
 * .NET Framework4.5
 
-# Development
+### Development
 
 * C#
 * WPF
 
-# License
+### License
 
 * MIT License(MIT) 
